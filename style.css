@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: hsl(310, 81%, 75%);
+}
+
+header {
+    background-color: #5c5a5c;
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive; /* Fuente agregada */
+    margin: 0;
+    font-size: 50px;
+}
+
+main {
+    padding: 20px;
+}
+
+#camera-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Añadimos un margen para separar la cámara de los botones */
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ff4081;
+}
+
+#kiss-frame {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.buttons {
+    margin-top: 10px;
+    position: relative; /* Para que los botones queden dentro de la sección de la cámara */
+    display: flex;
+    justify-content: center; /* Para centrar los botones */
+    flex-direction: row; /* Aseguramos que los botones estén alineados en fila */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+#action-section {
+    margin-top: 20px;
+}
+
